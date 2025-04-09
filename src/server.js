@@ -209,6 +209,41 @@ function emailTemplate(order) {
   return emailHtml;
 }
 
+// const testOrder = {
+//   id: "TEST123",
+//   customer: {
+//     name: "Test User",
+//     email: "test@example.com" // Use one of your verified emails for testing
+//   },
+//   items: [
+//     { name: "Test Product", quantity: 1, price: 29.99 }
+//   ],
+//   subtotal: 29.99,
+//   tax: 2.99,
+//   total: 32.98,
+//   shipping: {
+//     address: "123 Test Street",
+//     city: "Test City",
+//     state: "TS",
+//     zipCode: "12345"
+//   },
+//   payment: {
+//     method: "Credit Card",
+//     last4: "4242"
+//   },
+//   createdAt: new Date()
+// };
+
+// sendOrderConfirmationEmail(testOrder)
+//   .then(response => {
+//     console.log('Test email sent successfully!');
+//     console.log('Message ID:', response.id);
+//     console.log('Message status:', response.status);
+//   })
+//   .catch(error => {
+//     console.error('Failed to send test email:', error.message);
+//   });
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
